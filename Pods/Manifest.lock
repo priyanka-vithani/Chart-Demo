@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Charts (3.5.0):
+    - Charts/Core (= 3.5.0)
+  - Charts/Core (3.5.0)
+  - IQKeyboardManagerSwift (6.5.5)
+  - SDWebImage (3.8.3):
+    - SDWebImage/Core (= 3.8.3)
+  - SDWebImage/Core (3.8.3)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Charts
+  - IQKeyboardManagerSwift
+  - SDWebImage (~> 3.8)
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Charts
+    - IQKeyboardManagerSwift
+    - SDWebImage
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  SDWebImage: a72e880a8fe0f7fc31efe15aaed443c074d2a80c
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: fc0a3ce9be11d4fb99baf1c80a89bf24ff7d911f
+
+COCOAPODS: 1.8.4

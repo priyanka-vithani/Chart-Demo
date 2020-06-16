@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b4S-u4-aeK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="GHy-Za-adP">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="b4S-u4-aeK" customClass="ViewController" customModule="ChartsTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y2r-tN-iCK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cq5-OR-qiW">
+                                <rect key="frame" x="20" y="326" width="374" height="48"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Line Chart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnLineChart_clk:" destination="b4S-u4-aeK" eventType="touchUpInside" id="CZ9-iX-pma"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pC-ZF-fAA">
+                                <rect key="frame" x="20" y="424" width="374" height="48"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Pie Chart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnPieChart_clk:" destination="b4S-u4-aeK" eventType="touchUpInside" id="mVQ-GQ-yu5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggy-XY-Y4s">
+                                <rect key="frame" x="20" y="522" width="374" height="48"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Bar Chart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnBarChart_clk:" destination="b4S-u4-aeK" eventType="touchUpInside" id="XnX-bA-vcG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cq5-OR-qiW" firstAttribute="leading" secondItem="5BJ-Ha-bfp" secondAttribute="leading" constant="20" id="8Sh-JT-vjv"/>
+                            <constraint firstItem="5BJ-Ha-bfp" firstAttribute="trailing" secondItem="Cq5-OR-qiW" secondAttribute="trailing" constant="20" id="Kwo-8B-JzQ"/>
+                            <constraint firstItem="ggy-XY-Y4s" firstAttribute="leading" secondItem="5BJ-Ha-bfp" secondAttribute="leading" constant="20" id="abq-8k-uX8"/>
+                            <constraint firstItem="5pC-ZF-fAA" firstAttribute="top" secondItem="Cq5-OR-qiW" secondAttribute="bottom" constant="50" id="dAY-aE-eTm"/>
+                            <constraint firstItem="5pC-ZF-fAA" firstAttribute="centerX" secondItem="y2r-tN-iCK" secondAttribute="centerX" id="dK1-40-hVO"/>
+                            <constraint firstItem="ggy-XY-Y4s" firstAttribute="top" secondItem="5pC-ZF-fAA" secondAttribute="bottom" constant="50" id="gtM-2v-7ac"/>
+                            <constraint firstItem="5BJ-Ha-bfp" firstAttribute="trailing" secondItem="5pC-ZF-fAA" secondAttribute="trailing" constant="20" id="gwC-Nb-md9"/>
+                            <constraint firstItem="Cq5-OR-qiW" firstAttribute="centerX" secondItem="5pC-ZF-fAA" secondAttribute="centerX" id="ipg-8H-zY1"/>
+                            <constraint firstItem="5pC-ZF-fAA" firstAttribute="leading" secondItem="5BJ-Ha-bfp" secondAttribute="leading" constant="20" id="n0s-3J-hah"/>
+                            <constraint firstItem="5BJ-Ha-bfp" firstAttribute="trailing" secondItem="ggy-XY-Y4s" secondAttribute="trailing" constant="20" id="oMG-8h-5lX"/>
+                            <constraint firstItem="5pC-ZF-fAA" firstAttribute="centerY" secondItem="y2r-tN-iCK" secondAttribute="centerY" id="pyO-vt-wif"/>
+                            <constraint firstItem="ggy-XY-Y4s" firstAttribute="centerX" secondItem="5pC-ZF-fAA" secondAttribute="centerX" id="wmw-CV-MGm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5BJ-Ha-bfp"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnBarChart" destination="ggy-XY-Y4s" id="z5l-ei-JgV"/>
+                        <outlet property="btnLineChart" destination="Cq5-OR-qiW" id="kUX-tA-44G"/>
+                        <outlet property="btnPieChart" destination="5pC-ZF-fAA" id="Pf4-ib-xEW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQ9-hj-d4z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-555" y="129"/>
+        </scene>
+        <!--Line ChartVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LineChartVC" id="BYZ-38-t0r" customClass="LineChartVC" customModule="ChartsTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JbP-nZ-Ypn" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Bxx-wy-yvt"/>
+                                    <constraint firstAttribute="width" constant="300" id="FVY-m4-THk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JbP-nZ-Ypn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7rg-FG-Bac"/>
+                            <constraint firstItem="JbP-nZ-Ypn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QPP-N5-FPX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="VWLinechart" destination="JbP-nZ-Ypn" id="iT3-pV-1i6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100.00000000000001" y="128.57142857142856"/>
+        </scene>
+        <!--Pie ChartVC-->
+        <scene sceneID="yLF-ck-q2M">
+            <objects>
+                <viewController storyboardIdentifier="PieChartVC" id="mjx-rv-GFC" customClass="PieChartVC" customModule="ChartsTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SC0-3w-Zqe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ojd-x2-GfQ" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="LD6-Gh-Kdt"/>
+                                    <constraint firstAttribute="height" constant="300" id="phu-AN-X8k"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ojd-x2-GfQ" firstAttribute="centerY" secondItem="SC0-3w-Zqe" secondAttribute="centerY" id="O90-sd-gDC"/>
+                            <constraint firstItem="ojd-x2-GfQ" firstAttribute="centerX" secondItem="SC0-3w-Zqe" secondAttribute="centerX" id="WVX-ZA-i0a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HUK-8x-EBV"/>
+                    </view>
+                    <connections>
+                        <outlet property="vwPieChart" destination="ojd-x2-GfQ" id="x5D-Y8-akZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahu-yl-wgj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768" y="129"/>
+        </scene>
+        <!--BarchartVC-->
+        <scene sceneID="PQo-3D-bcf">
+            <objects>
+                <viewController storyboardIdentifier="BarchartVC" id="RpM-j8-e03" customClass="BarchartVC" customModule="ChartsTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PWB-hs-5gP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aXu-yk-ewO" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="pmj-LZ-79Y"/>
+                                    <constraint firstAttribute="width" constant="300" id="ucc-Bq-nMU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aXu-yk-ewO" firstAttribute="centerX" secondItem="PWB-hs-5gP" secondAttribute="centerX" id="spm-fV-UK8"/>
+                            <constraint firstItem="aXu-yk-ewO" firstAttribute="centerY" secondItem="PWB-hs-5gP" secondAttribute="centerY" id="vbd-Dt-DHg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UCJ-7I-K7g"/>
+                    </view>
+                    <connections>
+                        <outlet property="vwBarChart" destination="aXu-yk-ewO" id="t6h-Ec-0uk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xG9-11-Z5G" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="129"/>
+        </scene>
+    </scenes>
+</document>
